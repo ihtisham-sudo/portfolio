@@ -1,0 +1,754 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IhtishamSudo | Smart Contract Security Auditor & Researcher</title>
+    <meta
+      name="description"
+      content="Independent Smart Contract Security Researcher and Auditor specializing in EVM protocols, DeFi security, and cross-chain systems. Available for private audits."
+    />
+    <meta
+      property="og:title"
+      content="IhtishamSudo | Smart Contract Security Auditor"
+    />
+    <meta
+      property="og:description"
+      content="Independent Smart Contract Security Researcher and Auditor. Solidity & Rust expert."
+    />
+    <meta property="og:type" content="website" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <!-- ═══════════ NAVBAR ═══════════ -->
+    <nav class="navbar" id="navbar">
+      <div class="nav-container">
+        <a href="#home" class="nav-logo">
+          <span class="logo-icon">🛡️</span>
+          <span class="logo-text">IhtishamSudo</span>
+        </a>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#home" class="nav-link active">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#expertise" class="nav-link">Expertise</a></li>
+          <li><a href="#audits" class="nav-link">Audits</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+        <a href="mailto:ihtishamsudo@gmail.com" class="nav-cta">Hire Me</a>
+        <button class="hamburger" id="hamburger" aria-label="Toggle navigation">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </nav>
+
+    <!-- ═══════════ HERO ═══════════ -->
+    <section class="hero" id="home">
+      <div class="hero-bg-effects">
+        <div class="hero-glow hero-glow-1"></div>
+        <div class="hero-glow hero-glow-2"></div>
+        <div class="hero-grid"></div>
+      </div>
+      <div class="container hero-content">
+        <span class="hero-badge">
+          <span class="badge-dot"></span>
+          Smart Contract Security Auditor & Researcher
+        </span>
+        <h1 class="hero-title">
+          Securing the Future of
+          <span class="gradient-text">Decentralized Finance</span>
+        </h1>
+        <p class="hero-subtitle">
+          I identify critical vulnerabilities in smart contracts and DeFi
+          protocols. Specializing in <strong>Solidity</strong>,
+          <strong>Rust</strong>, and the <strong>EVM ecosystem</strong> —
+          auditing logic-heavy protocols, cross-chain systems, and staking
+          mechanisms.
+        </p>
+        <div class="hero-actions">
+          <a href="#audits" class="btn btn-primary">
+            <span>View My Work</span>
+            <svg
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path d="M5 12h14M12 5l7 7-7 7" />
+            </svg>
+          </a>
+          <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+        </div>
+        <div class="hero-stack">
+          <span class="stack-label">TECH STACK</span>
+          <div class="stack-pills">
+            <span class="pill">Solidity</span>
+            <span class="pill">Rust</span>
+            <span class="pill">EVM</span>
+            <span class="pill">Foundry</span>
+            <span class="pill">Hardhat</span>
+            <span class="pill">DeFi</span>
+            <span class="pill">Cross-chain</span>
+          </div>
+        </div>
+      </div>
+      <div class="hero-scroll-indicator">
+        <div class="scroll-line"></div>
+      </div>
+    </section>
+
+    <!-- ═══════════ STATS ═══════════ -->
+    <section class="stats" id="stats">
+      <div class="container">
+        <div class="stats-grid">
+          <div class="stat-card animate-on-scroll">
+            <span class="stat-number" data-target="29" data-suffix="+">0</span>
+            <span class="stat-label">Audit Contests</span>
+          </div>
+          <div class="stat-card animate-on-scroll">
+            <span class="stat-number" data-target="40" data-suffix="+">0</span>
+            <span class="stat-label">Vulnerabilities Found</span>
+          </div>
+          <div class="stat-card animate-on-scroll">
+            <span class="stat-number" data-target="150" data-suffix="+">0</span>
+            <span class="stat-label">Protocols Researched</span>
+          </div>
+          <div class="stat-card animate-on-scroll">
+            <span class="stat-number" data-target="5" data-suffix="x">0</span>
+            <span class="stat-label">Top 10 Finishes</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════ ABOUT ═══════════ -->
+    <section class="about" id="about">
+      <div class="container">
+        <div class="section-header animate-on-scroll">
+          <span class="section-tag">About Me</span>
+          <h2 class="section-title">
+            Who I <span class="gradient-text">Am</span>
+          </h2>
+        </div>
+        <div class="about-content animate-on-scroll">
+          <div class="about-text">
+            <p>
+              I'm an independent
+              <strong>Smart Contract Security Researcher and Auditor</strong>,
+              dedicated to identifying vulnerabilities in decentralized
+              applications and conducting in-depth analyses of EVM protocols.
+            </p>
+            <p>
+              My expertise spans across <strong>Solidity and Rust</strong>, with
+              a deep understanding of the EVM ecosystem. I specialize in
+              auditing logic-heavy protocols, cross-chain systems, staking
+              mechanisms, and various DeFi primitives.
+            </p>
+            <p>
+              I actively engage in research covering
+              <strong>over 150 EVM protocols</strong>, analyzing their core
+              algorithms, designs, governance, timelocks, and multisig
+              mechanisms. My research is categorized and published on
+              <a
+                href="https://scauditstudio.com/categories"
+                target="_blank"
+                rel="noopener"
+                >SCAuditStudio.com</a
+              >.
+            </p>
+            <p>
+              I am available for
+              <strong>private smart contract security audits</strong>, testing,
+              research, and collaborative team audits.
+            </p>
+          </div>
+          <div class="about-highlights">
+            <div class="highlight-card">
+              <div class="highlight-icon">🔍</div>
+              <h3>Deep Protocol Analysis</h3>
+              <p>
+                In-depth research of EVM protocols, governance, and multisig
+                mechanisms
+              </p>
+            </div>
+            <div class="highlight-card">
+              <div class="highlight-icon">🏆</div>
+              <h3>Contest Performance</h3>
+              <p>
+                Active across Sherlock, Code4rena, Cantina, CodeHawks & Immunefi
+              </p>
+            </div>
+            <div class="highlight-card">
+              <div class="highlight-icon">📜</div>
+              <h3>Certified</h3>
+              <p>Ackee School of Solana — Solana & Rust Development Graduate</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════ EXPERTISE ═══════════ -->
+    <section class="expertise" id="expertise">
+      <div class="container">
+        <div class="section-header animate-on-scroll">
+          <span class="section-tag">What I Do</span>
+          <h2 class="section-title">
+            My <span class="gradient-text">Expertise</span>
+          </h2>
+          <p class="section-desc">
+            From smart contract audits to advanced DeFi security research
+          </p>
+        </div>
+        <div class="expertise-grid">
+          <div class="expertise-card animate-on-scroll">
+            <div class="expertise-icon">
+              <svg
+                width="32"
+                height="32"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+              </svg>
+            </div>
+            <h3>Smart Contract Auditing</h3>
+            <p>
+              Comprehensive security audits of Solidity and Rust smart
+              contracts, identifying critical vulnerabilities before deployment.
+            </p>
+            <div class="expertise-tags">
+              <span>Solidity</span>
+              <span>Rust</span>
+              <span>EVM</span>
+            </div>
+          </div>
+          <div class="expertise-card animate-on-scroll">
+            <div class="expertise-icon">
+              <svg
+                width="32"
+                height="32"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <circle cx="12" cy="12" r="10" />
+                <path d="M12 6v6l4 2" />
+              </svg>
+            </div>
+            <h3>DeFi Security Research</h3>
+            <p>
+              Deep analysis of DeFi primitives, lending protocols, AMMs, and
+              yield strategies to uncover logic flaws and economic exploits.
+            </p>
+            <div class="expertise-tags">
+              <span>DeFi</span>
+              <span>Lending</span>
+              <span>AMMs</span>
+            </div>
+          </div>
+          <div class="expertise-card animate-on-scroll">
+            <div class="expertise-icon">
+              <svg
+                width="32"
+                height="32"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <rect x="2" y="3" width="20" height="14" rx="2" ry="2" />
+                <line x1="8" y1="21" x2="16" y2="21" />
+                <line x1="12" y1="17" x2="12" y2="21" />
+              </svg>
+            </div>
+            <h3>Private Audits</h3>
+            <p>
+              Dedicated, confidential security reviews for protocols before
+              mainnet launches — covering architecture, access control, and edge
+              cases.
+            </p>
+            <div class="expertise-tags">
+              <span>Private</span>
+              <span>Confidential</span>
+              <span>Pre-launch</span>
+            </div>
+          </div>
+          <div class="expertise-card animate-on-scroll">
+            <div class="expertise-icon">
+              <svg
+                width="32"
+                height="32"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <polyline points="16 18 22 12 16 6" />
+                <polyline points="8 6 2 12 8 18" />
+              </svg>
+            </div>
+            <h3>Cross-chain Security</h3>
+            <p>
+              Security analysis of bridge protocols, cross-chain messaging, and
+              multi-chain deployments with focus on message integrity.
+            </p>
+            <div class="expertise-tags">
+              <span>Bridges</span>
+              <span>Messaging</span>
+              <span>Multi-chain</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════ AUDITS ═══════════ -->
+    <section class="audits" id="audits">
+      <div class="container">
+        <div class="section-header animate-on-scroll">
+          <span class="section-tag">Track Record</span>
+          <h2 class="section-title">
+            Notable <span class="gradient-text">Engagements</span>
+          </h2>
+          <p class="section-desc">
+            A selection of audit contests, bug discoveries, and private
+            engagements
+          </p>
+        </div>
+
+        <!-- Private Audits -->
+        <div class="audits-subsection animate-on-scroll">
+          <h3 class="audits-subtitle">🔒 Private Audits</h3>
+          <div class="audits-grid">
+            <a
+              href="https://github.com/ihtisham-sudo/private-audit-reports/blob/main/reports/c8ntinuumlaunchpad-dec-2025.pdf"
+              target="_blank"
+              rel="noopener"
+              class="audit-card private"
+            >
+              <div class="audit-platform">Private</div>
+              <h4>C8ntinuum Launchpad</h4>
+              <p>Solidity — 2 Critical, 2 High, 3 Medium, 1 Low</p>
+              <span class="audit-link-text">View Report →</span>
+            </a>
+            <a
+              href="https://github.com/ihtisham-sudo/private-audit-reports/blob/main/reports/c8ntinuumbridge-dec-2025.pdf"
+              target="_blank"
+              rel="noopener"
+              class="audit-card private"
+            >
+              <div class="audit-platform">Private</div>
+              <h4>C8ntinuum Bridge</h4>
+              <p>Solidity/Rust — 1 High, 3 Medium, 1 Low</p>
+              <span class="audit-link-text">View Report →</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Contest Engagements -->
+        <div class="audits-subsection animate-on-scroll">
+          <h3 class="audits-subtitle">🏆 Top Contest Placements</h3>
+          <div class="audits-grid">
+            <a
+              href="https://cantina.xyz/code/917d796b-48d0-41d0-bb40-be137b7d3db5"
+              target="_blank"
+              rel="noopener"
+              class="audit-card"
+            >
+              <div class="audit-platform cantina">Cantina</div>
+              <h4>Octant v2 Core</h4>
+              <p>Public Goods Funding — Top Five 🏅 with 1 Medium</p>
+              <span class="audit-link-text">View Competition →</span>
+            </a>
+            <a
+              href="https://github.com/code-423n4/2024-03-acala-findings/issues/16"
+              target="_blank"
+              rel="noopener"
+              class="audit-card"
+            >
+              <div class="audit-platform c4">Code4rena</div>
+              <h4>Acala</h4>
+              <p>Cross-chain DeFi — Top Five 🏅 with 1 High</p>
+              <span class="audit-link-text">View Finding →</span>
+            </a>
+            <a
+              href="https://cantina.xyz/competitions/bd882748-077e-4e55-853f-f8df70109dbb"
+              target="_blank"
+              rel="noopener"
+              class="audit-card"
+            >
+              <div class="audit-platform cantina">Cantina</div>
+              <h4>Succinct Network</h4>
+              <p>ZK Prover Network — Top 15 with 1 Medium</p>
+              <span class="audit-link-text">View Competition →</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="audits-cta animate-on-scroll">
+          <a
+            href="https://github.com/ihtisham-sudo/"
+            target="_blank"
+            rel="noopener"
+            class="btn btn-secondary"
+          >
+            View Full Portfolio on GitHub
+            <svg
+              width="16"
+              height="16"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path
+                d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"
+              />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════ RESEARCH ═══════════ -->
+    <section class="research" id="research">
+      <div class="container">
+        <div class="section-header animate-on-scroll">
+          <span class="section-tag">Knowledge</span>
+          <h2 class="section-title">
+            Security <span class="gradient-text">Research</span>
+          </h2>
+        </div>
+        <div class="research-grid">
+          <div class="research-card animate-on-scroll">
+          <div class="research-meta">
+            <span class="research-tag">Featured Article</span>
+            <span class="research-date">2025</span>
+          </div>
+          <h3>
+            Why Some Smart Contract Audits Are So Expensive (2025 Edition)
+          </h3>
+          <p>
+            An in-depth analysis of audit costs, methodologies, and market
+            benchmarks in the smart contract security industry.
+          </p>
+          <a
+            href="https://scauditstudio.com/blog/Why-Some-Smart-Contract-Audits-Are-So-Expensive-(2025-Edition)"
+            target="_blank"
+            rel="noopener"
+            class="research-link"
+          >
+            Read Article
+            <svg
+              width="16"
+              height="16"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path d="M5 12h14M12 5l7 7-7 7" />
+            </svg>
+          </a>
+        </div>
+        <div class="research-card animate-on-scroll">
+          <div class="research-meta">
+            <span class="research-tag">Risk Analysis</span>
+            <span class="research-tag">Research</span>
+            <span class="research-date">2026</span>
+          </div>
+          <h3>
+            What Happens to $45M of Morpho Debt When ETH Falls 20%?
+          </h3>
+          <p>
+            A deep-dive risk assessment of Morpho lending markets, simulating crash scenarios and liquidation cascades on Base DEXs.
+          </p>
+          <a
+            href="https://scauditstudio.com/blog/Morpho-Risk-Assessment"
+            target="_blank"
+            rel="noopener"
+            class="research-link"
+          >
+            Read Article
+            <svg
+              width="16"
+              height="16"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path d="M5 12h14M12 5l7 7-7 7" />
+            </svg>
+          </a>
+        </div>
+        <div class="research-card animate-on-scroll">
+          <div class="research-meta">
+            <span class="research-tag">Research</span>
+            <span class="research-date">2025</span>
+          </div>
+          <h3>
+            How AI and Formal Verification Can Revolutionize Smart Contract Security
+          </h3>
+          <p>
+            Exploring the neuro-symbolic approach to combining AI with formal verification for automated vulnerability detection in DeFi.
+          </p>
+          <a
+            href="https://scauditstudio.com/blog/AI-&-Formal-Verification-In-Defi"
+            target="_blank"
+            rel="noopener"
+            class="research-link"
+          >
+            Read Article
+            <svg
+              width="16"
+              height="16"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path d="M5 12h14M12 5l7 7-7 7" />
+            </svg>
+          </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════ CTA ═══════════ -->
+    <section class="cta" id="contact">
+      <div class="container">
+        <div class="cta-content animate-on-scroll">
+          <h2 class="cta-title">
+            Ready to <span class="gradient-text">Secure</span> Your Protocol?
+          </h2>
+          <p class="cta-subtitle">
+            Let's discuss how I can help identify vulnerabilities and strengthen
+            your smart contracts before deployment.
+          </p>
+          <div class="cta-actions">
+            <a
+              href="https://t.me/ihtishamsudo"
+              target="_blank"
+              rel="noopener"
+              class="btn btn-primary"
+            >
+              <span>Get In Touch</span>
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M5 12h14M12 5l7 7-7 7" />
+              </svg>
+            </a>
+            <a
+              href="https://github.com/ihtisham-sudo/"
+              target="_blank"
+              rel="noopener"
+              class="btn btn-secondary"
+              >View Portfolio</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════ FOOTER ═══════════ -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <a href="#home" class="nav-logo">
+              <span class="logo-icon">🛡️</span>
+              <span class="logo-text">IhtishamSudo</span>
+            </a>
+            <p class="footer-desc">
+              Smart Contract Security Auditor & Researcher. Securing
+              decentralized protocols through rigorous analysis.
+            </p>
+            <div class="footer-socials">
+              <a
+                href="https://x.com/ihtishamSudo"
+                target="_blank"
+                rel="noopener"
+                aria-label="X / Twitter"
+                class="social-link"
+              >
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                >
+                  <path
+                    d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"
+                  />
+                </svg>
+              </a>
+              <a
+                href="https://github.com/ihtisham-sudo/"
+                target="_blank"
+                rel="noopener"
+                aria-label="GitHub"
+                class="social-link"
+              >
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                >
+                  <path
+                    d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"
+                  />
+                </svg>
+              </a>
+              <a
+                href="https://www.linkedin.com/in/ihtisham-ullah/"
+                target="_blank"
+                rel="noopener"
+                aria-label="LinkedIn"
+                class="social-link"
+              >
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                >
+                  <path
+                    d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"
+                  />
+                </svg>
+              </a>
+              <a
+                href="https://audits.sherlock.xyz/watson/ihtishamsudo"
+                target="_blank"
+                rel="noopener"
+                aria-label="Sherlock"
+                class="social-link"
+              >
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                >
+                  <path
+                    d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm0 2.18l7 3.12v4.7c0 4.67-3.13 9.06-7 10.2-3.87-1.14-7-5.53-7-10.2V6.3l7-3.12z"
+                  />
+                  <path
+                    d="M12 6a3 3 0 100 6 3 3 0 000-6zm0 2a1 1 0 110 2 1 1 0 010-2zm-4 7c0-1.1.9-2 2-2h4c1.1 0 2 .9 2 2v1H8v-1z"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div class="footer-links-group">
+            <h4>Quick Links</h4>
+            <ul>
+              <li><a href="#about">About</a></li>
+              <li><a href="#expertise">Expertise</a></li>
+              <li><a href="#audits">Audits</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer-links-group">
+            <h4>Platforms</h4>
+            <ul>
+              <li>
+                <a
+                  href="https://audits.sherlock.xyz/watson/ihtishamsudo"
+                  target="_blank"
+                  rel="noopener"
+                  >Sherlock</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://scauditstudio.com/categories"
+                  target="_blank"
+                  rel="noopener"
+                  >SCAuditStudio</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://github.com/ihtisham-sudo/"
+                  target="_blank"
+                  rel="noopener"
+                  >GitHub</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="footer-links-group">
+            <h4>Contact</h4>
+            <ul>
+              <li>
+                <a
+                  href="https://x.com/ihtishamSudo"
+                  target="_blank"
+                  rel="noopener"
+                  >Twitter / X</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://t.me/ihtishamsudo"
+                  target="_blank"
+                  rel="noopener"
+                  >Telegram</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.linkedin.com/in/ihtisham-ullah/"
+                  target="_blank"
+                  rel="noopener"
+                  >LinkedIn</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2025 IhtishamSudo. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
