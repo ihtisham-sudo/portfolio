@@ -493,7 +493,7 @@ ul {
 
 .stats-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(5, 1fr);
   gap: 24px;
 }
 
@@ -1094,6 +1094,9 @@ ul {
 .stats-grid .stat-card:nth-child(4) {
   transition-delay: 0.3s;
 }
+.stats-grid .stat-card:nth-child(5) {
+  transition-delay: 0.4s;
+}
 
 .expertise-grid .expertise-card:nth-child(2) {
   transition-delay: 0.1s;
@@ -1144,7 +1147,7 @@ ul {
 /* ═══════════════ RESPONSIVE ═══════════════ */
 @media (max-width: 1024px) {
   .stats-grid {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
   }
   .audits-grid {
     grid-template-columns: repeat(2, 1fr);
@@ -1253,6 +1256,10 @@ ul {
 }
 
 @media (max-width: 480px) {
+  .stats-grid {
+    grid-template-columns: 1fr;
+  }
+
   .hero-actions {
     flex-direction: column;
     align-items: center;
