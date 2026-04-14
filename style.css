@@ -728,6 +728,13 @@ ul {
   box-shadow: 0 8px 28px rgba(0, 0, 0, 0.25);
 }
 
+.audit-card-header {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 14px;
+}
+
 .audit-platform {
   display: inline-block;
   padding: 4px 12px;
@@ -738,6 +745,22 @@ ul {
   letter-spacing: 1px;
   margin-bottom: 14px;
   width: fit-content;
+}
+
+.audit-status {
+  display: inline-block;
+  padding: 4px 12px;
+  border-radius: var(--radius-full);
+  font-size: 0.72rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  width: fit-content;
+}
+
+.audit-card-header .audit-platform,
+.audit-card-header .audit-status {
+  margin-bottom: 0;
 }
 
 .audit-platform.sherlock {
@@ -770,6 +793,12 @@ ul {
   border: 1px solid rgba(0, 245, 212, 0.2);
 }
 
+.audit-status.pending {
+  background: rgba(255, 184, 77, 0.12);
+  color: #ffc078;
+  border: 1px solid rgba(255, 184, 77, 0.2);
+}
+
 .audit-card h4 {
   font-family: var(--font-heading);
   font-size: 1.05rem;
@@ -792,8 +821,27 @@ ul {
   transition: var(--transition);
 }
 
+.audit-link-text.muted {
+  color: var(--text-secondary);
+}
+
 .audit-card:hover .audit-link-text {
   letter-spacing: 1px;
+}
+
+.audit-card.pending {
+  cursor: default;
+}
+
+.audit-card.pending:hover {
+  border-color: var(--border-color);
+  background: var(--bg-card);
+  transform: none;
+  box-shadow: none;
+}
+
+.audit-card.pending:hover .audit-link-text {
+  letter-spacing: 0;
 }
 
 .audits-cta {
